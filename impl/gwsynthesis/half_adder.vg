@@ -1,0 +1,71 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.01 (64-bit)"
+//Thu Nov 12 01:19:51 2026
+
+//Source file index table:
+//file0 "\C:/Gowin/Projects/half_adder/src/halfadder_tb.sv"
+//file1 "\C:/Gowin/Projects/half_adder/src/halfadder.sv"
+//file2 "\C:/Gowin/Projects/half_adder/src/top.sv"
+`timescale 100 ps/100 ps
+module top (
+  btn_a,
+  btn_b,
+  led_r,
+  led_g,
+  led_b
+)
+;
+input btn_a;
+input btn_b;
+output led_r;
+output led_g;
+output led_b;
+wire btn_a_d;
+wire btn_b_d;
+wire led_r_d;
+wire led_g_d;
+wire VCC;
+wire GND;
+  IBUF btn_a_ibuf (
+    .O(btn_a_d),
+    .I(btn_a) 
+);
+  IBUF btn_b_ibuf (
+    .O(btn_b_d),
+    .I(btn_b) 
+);
+  OBUF led_r_obuf (
+    .O(led_r),
+    .I(led_r_d) 
+);
+  OBUF led_g_obuf (
+    .O(led_g),
+    .I(led_g_d) 
+);
+  OBUF led_b_obuf (
+    .O(led_b),
+    .I(VCC) 
+);
+  LUT2 led_r_d_s (
+    .F(led_r_d),
+    .I0(btn_a_d),
+    .I1(btn_b_d) 
+);
+defparam led_r_d_s.INIT=4'h9;
+  LUT2 led_g_d_s (
+    .F(led_g_d),
+    .I0(btn_a_d),
+    .I1(btn_b_d) 
+);
+defparam led_g_d_s.INIT=4'h7;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* top */

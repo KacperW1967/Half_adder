@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Gowin/Projects/half_adder/src
+vhalf_adder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1794438444
+!i10b 1
+!s100 fgGiaM3InOTJCE<H`YMo@0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[T:;f@Y51=Y<?M<B9CR3Z0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1794426009
+8halfadder.sv
+Fhalfadder.sv
+!i122 2
+L0 3 12
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1794438444.000000
+!s107 halfadder.sv|
+!s90 -reportprogress|300|halfadder.sv|
+!i113 1
+Z7 tCvgOpt 0
+vhalf_adder_tb
+R1
+R2
+!i10b 1
+!s100 ZGBkP<ZR:I6J=j8RcV4`I0
+R3
+IGUn3NZZoAR[?0WMa`[bI>2
+R4
+S1
+R0
+w1794437999
+8halfadder_tb.sv
+Fhalfadder_tb.sv
+!i122 3
+L0 3 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 halfadder_tb.sv|
+!s90 -reportprogress|300|halfadder_tb.sv|
+!i113 1
+R7
